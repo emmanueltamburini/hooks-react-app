@@ -1,7 +1,11 @@
+import { CounterApp } from "./01-useState/CounterApp"
+import { CounterWithCustomHookApp } from "./01-useState/CounterWithCustonHookApp"
+
 function App() {
   return (
     <>
-      <h1>BoilerPlate</h1>
+      <CounterApp />
+      <CounterWithCustomHookApp />
     </>
   )
 }
