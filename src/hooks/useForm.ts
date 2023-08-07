@@ -8,6 +8,10 @@ export const useForm = <T extends object>(initialForm: T) => {
       setFormState({...formState, [name]: value});    
     }
 
-    return ({formState, onInputChange, ...formState});
+    const onReset = () => {
+        setFormState({...initialForm});
+    }
+
+    return ({ ...formState, formState, onInputChange, onReset});
 }
 

@@ -1,13 +1,12 @@
 import { useEffect } from 'react';
-import { Message } from './Message';
 import { useForm } from '../hooks/useForm';
 
 
 export const SimpleFormWithCustomHook = () => {
-  const {formState, onInputChange, email, password, username} = useForm({
-    username: 'EmmanuelTamburini',
-    email: 'emmanueltamburini@gmail.com',
-    password: '123456'
+  const {formState, email, password, username, onInputChange, onReset} = useForm({
+    username: '',
+    email: '',
+    password: ''
   });
 
   useEffect(() => {
@@ -52,7 +51,7 @@ export const SimpleFormWithCustomHook = () => {
             onChange={onInputChange}
         />
         
-        {username === 'EmmanuelTamburini' && <Message />}
+        <button onClick={onReset} className='btn btn-primary mt-2'>Delete</button>
     </>
   )
 }
