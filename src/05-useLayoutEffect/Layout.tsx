@@ -1,8 +1,9 @@
-import { Quote, LoadingQuote } from ".";
 import { useFetch, useCounter } from "../hooks";
 import { BreakingBadResponse } from "../interfaces/breakingBadResponse.interface";
+import { LoadingQuote } from "./LoadingQuote";
+import { Quote } from "./Quote";
 
-export const MultipleCustomHook = () => {
+export const Layout = () => {
     const { counter, increment } = useCounter(1);
 
     const url = `https://api.breakingbadquotes.xyz/v1/quotes/${counter}`
