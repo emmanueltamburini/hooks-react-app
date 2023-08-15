@@ -2,8 +2,9 @@
 import { CounterWithCustomHookApp } from "./01-useState/CounterWithCustomHookApp"
 import { SimpleForm } from './02-useEffect/SimpleForm';
 import { SimpleFormWithCustomHook } from "./02-useEffect/SimpleFormWithCustomHook"; */
+//import { MultipleCustomHook } from "./03-example"
 
-import { MultipleCustomHook } from "./03-example"
+import { FocusScreen } from "./04-useRef/FocusScreen"
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       {/* <CounterWithCustomHookApp /> */}
       {/* <SimpleForm /> */}
       {/* <SimpleFormWithCustomHook /> */}
-      <MultipleCustomHook />
+      {/* <MultipleCustomHook /> */}
+      <FocusScreen />
     </>
   )
 }
