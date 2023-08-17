@@ -7,8 +7,9 @@ import { SimpleFormWithCustomHook } from "./02-useEffect/SimpleFormWithCustomHoo
 //import { Layout } from "./05-useLayoutEffect/Layout"
 //import { Memorize } from "./06-memos/Memorize"
 //import { MemoHook } from "./06-memos/MemoHook"
+//import { CallbackHook } from "./06-memos/CallbackHook"
 
-import { CallbackHook } from "./06-memos/CallbackHook"
+import { Father } from "./07-homework/Father"
 
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
       {/* <Layout /> */}
       {/* <Memorize /> */}
       {/* <MemoHook /> */}
-      <CallbackHook />
+      {/* <CallbackHook /> */}
+      <Father />
     </>
   )
 }
