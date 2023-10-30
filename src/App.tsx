@@ -8,8 +8,12 @@ import { SimpleFormWithCustomHook } from "./02-useEffect/SimpleFormWithCustomHoo
 //import { Memorize } from "./06-memos/Memorize"
 //import { MemoHook } from "./06-memos/MemoHook"
 //import { CallbackHook } from "./06-memos/CallbackHook"
+//import { Father } from "./07-homework/Father"
 
-import { Father } from "./07-homework/Father"
+import { TodoApp } from "./08-useReducer/TodoApp"
+
+
+//import './08-useReducer/intro-reducer'
 
 
 function App() {
@@ -25,7 +29,8 @@ function App() {
       {/* <Memorize /> */}
       {/* <MemoHook /> */}
       {/* <CallbackHook /> */}
-      <Father />
+      {/* <Father /> */}
+      < TodoApp />
     </>
   )
 }
