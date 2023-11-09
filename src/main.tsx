@@ -1,40 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
 import {
     createBrowserRouter,
-    Navigate,
     RouterProvider,
 } from "react-router-dom";
-import { LoginPage } from './09-useContext/LoginPage.tsx';
-import { AboutPage } from './09-useContext/AboutPage.tsx';
-import { HomePage } from './09-useContext/HomePage.tsx';
 import './index.css'
+import { routesConfig } from './routesConfig.tsx';
 
-const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <App />,
-      children: [
-        {
-            path: "/",
-            element: <HomePage />,
-        },
-        {
-            path: "login",
-            element: <LoginPage />,
-        },
-        {
-            path: "about",
-            element: <AboutPage />,
-        },
-        {
-            path: "/*",
-            element: <Navigate to="/about"/>,  
-        },
-      ],
-    },
-]);
+const router = createBrowserRouter(routesConfig);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

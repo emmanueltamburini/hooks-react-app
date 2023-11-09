@@ -17,7 +17,7 @@ export const MultipleCustomHook = () => {
             <hr />
             {isLoading ? <LoadingQuote /> : <Quote author={author} quote={quote} />}
 
-            <button className="btn btn-primary" onClick={() => increment(1)}>Next quote</button>
+            <button className="btn btn-primary" disabled={isLoading} onClick={() => increment(1)}>Next quote</button>
         </div>
     )
 }

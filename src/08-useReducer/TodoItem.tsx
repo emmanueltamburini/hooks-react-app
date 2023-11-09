@@ -15,7 +15,14 @@ export const TodoItem = ({ todo, handleDelete, handleToggle }: Props) => {
 
     return (
         <li className="list-group-item d-flex justify-content-between">
-            <span onClick={() => onToggleTodo()} className={`align-self-center ${(todo.done) ? 'text-decoration-line-through' : ''}`}>{todo.todo}</span>
+            <span
+                aria-label='span'
+                onClick={() => onToggleTodo()}
+                onKeyDown={() => onToggleTodo()}
+                className={`align-self-center ${(todo.done) ? 'text-decoration-line-through' : ''}`}
+            >
+                {todo.todo}
+            </span>
             <button className="btn btn-danger" onClick={() => onDelete()}>Delete</button>
         </li>
     )

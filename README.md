@@ -2,7 +2,7 @@
 
 ## HookApp README
 
-This application is an react app to try the react hooks and their functionality.
+This application is an react app to try the react hooks and their functionality, also this project has test for the hooks.
 
 ### Getting started
 
